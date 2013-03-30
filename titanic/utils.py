@@ -45,14 +45,14 @@ class TitaticUtils():
         # sex
         (sex_train_data, sex_test_data) = self.categorize_column_info(train_data[1:,3],test_data[1:,2])
         # age
-        (age_train_data, age_test_data) = self.binize_column_info(train_data[1:,4],test_data[1:,3],10)
+        (age_train_data, age_test_data) = self.binize_column_info(train_data[1:,4],test_data[1:,3],3)
         # sibsp
-        (sibsp_train_data, sibsp_test_data) = self.binize_column_info(train_data[1:,5],test_data[1:,4], 4)
+        (sibsp_train_data, sibsp_test_data) = self.binize_column_info(train_data[1:,5],test_data[1:,4], 3)
         # parch
-        (parch_train_data, parch_test_data) = self.binize_column_info(train_data[1:,6], test_data[1:,5],4)
+        (parch_train_data, parch_test_data) = self.binize_column_info(train_data[1:,6], test_data[1:,5],3)
         # ticket We skip it for now
         # fare
-        (fare_train_data, fare_test_data) = self.binize_column_info(train_data[1:,8], test_data[1:,7], 10)
+        (fare_train_data, fare_test_data) = self.binize_column_info(train_data[1:,8], test_data[1:,7], 3)
         # cabin We skip it for now
         # embarked
         (embarked_train_data, embarked_test_data) = self.categorize_column_info(train_data[1:,10], test_data[1:,9])
